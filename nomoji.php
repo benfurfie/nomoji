@@ -4,7 +4,7 @@
  * Description: Removes all traces of the emoji script from WordPress.
  * Author: Ben Furfie
  * Author URI: https://www.benfurfie.co.uk
- * Version: 0.1.1
+ * Version: 0.1.2
  * Copyright: Ben Furfie © 2018
  * License: GPL2.0+
  * 
@@ -12,7 +12,7 @@
  * @subpackage Nomoji
  * @author Ben Furfie <hello@benfurfie.co.uk>
  * @copyright 2018 Ben Furfie
- * @version 0.1.1
+ * @version 0.1.2
  * @license GPL2.0+
  */
 namespace nomoji;
@@ -23,9 +23,9 @@ class Nomoji
 {
     function __construct()
     {
-        add_action('init', array($this, 'nomoji/remove_emojis'));
-        add_filter('tiny_mce_plugins', array($this, 'nomoji/disable_emojis_tinymce'));
-        add_filter('wp_resource_hints', array($this, 'nomoji/disable_emojis_remove_dns_prefetch', 10, 2));
+        add_action('init', array($this, 'remove_emojis'));
+        add_filter('tiny_mce_plugins', array($this, 'disable_emojis_tinymce'));
+        add_filter('wp_resource_hints', array($this, 'disable_emojis_remove_dns_prefetch', 10, 2));
     }
 
     /**
