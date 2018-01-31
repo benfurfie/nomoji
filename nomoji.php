@@ -4,7 +4,7 @@
  * Description: Removes all traces of the emoji script from WordPress.
  * Author: Ben Furfie
  * Author URI: https://www.benfurfie.co.uk
- * Version: 0.1.0
+ * Version: 0.1.1
  * Copyright: Ben Furfie © 2018
  * License: GPL2.0+
  * 
@@ -12,7 +12,7 @@
  * @subpackage Nomoji
  * @author Ben Furfie <hello@benfurfie.co.uk>
  * @copyright 2018 Ben Furfie
- * @version 0.1.0
+ * @version 0.1.1
  * @license GPL2.0+
  */
 namespace nomoji;
