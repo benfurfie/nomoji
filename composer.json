@@ -1,7 +1,7 @@
 {
     "name": "benfurfie/nomoji",
     "description": "A package to remove emojis from WordPress",
-    "type": "wordordpress-plugin",
+    "type": "wordpress-plugin",
     "require": {
         "composer/installers": "^1.5"
     },
